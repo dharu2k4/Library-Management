@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#add-book">Add Book</a></li>
+                <li><a href="#search-book">Search Book</a></li>
+                <li><a href="#issue-book">Issue Book</a></li>
+                <li><a href="#return-book">Return Book</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="add-book" class="section-content">
+                <h2>Add New Book</h2>
+                <form>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                    
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author">
+                    
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn">
+                    
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+            
+            <div id="search-book" class="section-content">
+                <h2>Search Book</h2>
+                <form>
+                    <label for="search">Search by Title or Author:</label>
+                    <input type="text" id="search" name="search">
+                    
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            
+            <div id="issue-book" class="section-content">
+                <h2>Issue Book</h2>
+                <form>
+                    <label for="book-id">Book ID:</label>
+                    <input type="text" id="book-id" name="book-id">
+                    
+                    <label for="user-id">User ID:</label>
+                    <input type="text" id="user-id" name="user-id">
+                    
+                    <button type="submit">Issue Book</button>
+                </form>
+            </div>
+            
+            <div id="return-book" class="section-content">
+                <h2>Return Book</h2>
+                <form>
+                    <label for="book-id-return">Book ID:</label>
+                    <input type="text" id="book-id-return" name="book-id-return">
+                    
+                    <button type="submit">Return Book</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
